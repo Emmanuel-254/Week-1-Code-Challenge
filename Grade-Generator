@@ -1,0 +1,27 @@
+function getGrade(Marks){
+    if(Marks > 79 && Marks <= 100){
+        return "A"
+    } 
+    else if(Marks >= 60 && Marks <= 79){
+        return "B"
+    }
+    else if(Marks >= 49 && Marks <= 59){
+        return "C"
+    }
+    else if(Marks >= 40 && Marks <= 49){
+        return "D"
+    }
+    else if(Marks < 40 && Marks >= 0){
+        return"E"
+    }
+    else{
+        return "Invalid Input"
+    }
+}
+//Prompt for user input
+let input = ("85");
+let Marks = parseInt(input)
+
+let grade = getGrade(Marks);
+console.log(`Your grade ${Marks} is: ${grade}`)
+
